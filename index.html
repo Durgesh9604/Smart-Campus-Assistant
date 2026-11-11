@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎓 Smart Campus Assistant</h1>
+        <p>Your digital assistant for campus information</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#notices">Notices</a>
+        <a href="#faqs">FAQs</a>
+    </nav>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Your Campus, One Smart Assistant 👋</h2>
+            <p>
+                Everything you need for campus life,
+                just a question away.
+            </p>
+        </section>
+
+        <!-- Chatbot Section -->
+        <section id="chatbot">
+            <h2>🤖 Campus Assistant</h2>
+
+            <!-- Messages are added here by JavaScript -->
+            <div id="chat-messages" aria-live="polite">
+                <div class="bot-message">
+                    <strong>Assistant:</strong>
+                    <span>Hello! How can I help you today?</span>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input">
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask your question..."
+                    autocomplete="off"
+                >
+
+                <button type="button" id="send-button">
+                    Send
+                </button>
+            </div>
+        </section>
+
+        <!-- Quick Questions -->
+        <section id="quick-questions">
+            <h2>Quick Questions</h2>
+
+            <button
+                type="button"
+                class="quick-button"
+                data-question="What is my timetable?">
+                📅 Timetable
+            </button>
+
+            <button
+                type="button"
+                class="quick-button"
+                data-question="Where can I find the syllabus?">
+                📚 Syllabus
+            </button>
+
+            <button
+                type="button"
+                class="quick-button"
+                data-question="Are there any college notices?">
+                🔔 Notices
+            </button>
+
+            <button
+                type="button"
+                class="quick-button"
+                data-question="Show me frequently asked questions.">
+                ❓ FAQs
+            </button>
+        </section>
+
+        <!-- Campus Resources -->
+        <section id="campus-resources">
+
+            <!-- Timetable -->
+            <div class="timetable" id="timetable">
+                <h2>📅 Timetable</h2>
+                <p>Check your class timetable here.</p>
+
+                <button
+                    type="button"
+                    class="campus-button"
+                    data-question="What is my timetable?">
+                    View Timetable
+                </button>
+            </div>
+
+            <!-- Syllabus -->
+            <div class="syllabus" id="syllabus">
+                <h2>📚 Syllabus</h2>
+                <p>Find your semester and subject syllabus.</p>
+
+                <button
+                    type="button"
+                    class="campus-button"
+                    data-question="Where can I find the syllabus?">
+                    View Syllabus
+                </button>
+            </div>
+
+            <!-- Notices -->
+            <div class="notices" id="notices">
+                <h2>📢 College Notices</h2>
+                <p>
+                    Check the latest college announcements
+                    and updates.
+                </p>
+
+                <button
+                    type="button"
+                    class="campus-button"
+                    data-question="Are there any college notices?">
+                    Read Notices
+                </button>
+            </div>
+
+            <!-- FAQs -->
+            <div class="faq" id="faqs">
+                <h2>❓ FAQs</h2>
+                <p>Find answers to frequently asked campus questions.</p>
+
+                <button
+                    type="button"
+                    class="campus-button"
+                    data-question="Show me frequently asked questions.">
+                    View FAQs
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section id="faq">
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <details>
+                <summary>When are my classes?</summary>
+                <p>You can ask the assistant for your timetable.</p>
+            </details>
+
+            <details>
+                <summary>Where can I find the syllabus?</summary>
+                <p>Select the syllabus section above.</p>
+            </details>
+
+            <details>
+                <summary>Where can I find college notices?</summary>
+                <p>Visit the Notices section.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Smart Campus Assistant</p>
+        <p>Made by CSE students</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
